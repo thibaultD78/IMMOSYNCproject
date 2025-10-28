@@ -1,16 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="sio.immosync.controler.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.immosync.controler.HelloController">
+   <children>
+      <AnchorPane prefHeight="427.0" prefWidth="738.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="717.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/fondAcceil.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnEntrepreneur" fitHeight="288.0" fitWidth="288.0" layoutX="72.0" layoutY="53.0" onMouseClicked="#ClickEntreppreneur" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/btnEntrepreneur.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnInspecteur" fitHeight="288.0" fitWidth="288.0" layoutX="228.0" layoutY="54.0" onMouseClicked="#ClickInspecteur" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/btnInspecteur.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnProprio" fitHeight="288.0" fitWidth="288.0" layoutX="383.0" layoutY="53.0" onMouseClicked="#ClickProprio" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/btnProprio.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnInscription" fitHeight="288.0" fitWidth="288.0" layoutX="436.0" layoutY="342.0" onMouseClicked="#ClickInscription" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/btnInscription.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
