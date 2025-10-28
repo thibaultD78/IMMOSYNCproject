@@ -1,4 +1,4 @@
-package sio.immosync.services;
+package sio.immosync;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
