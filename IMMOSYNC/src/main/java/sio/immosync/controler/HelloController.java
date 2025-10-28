@@ -3,6 +3,7 @@ package sio.immosync.controler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
@@ -14,6 +15,9 @@ public class HelloController implements Initializable {
     public ImageView btnInspecteur;
     public ImageView btnProprio;
     public ImageView btnInscription;
+    public ImageView btnConnexion;
+    public TextField txtLogin;
+    public TextField txtMdp;
     @FXML
     private Label welcomeText;
 
@@ -37,5 +41,8 @@ public class HelloController implements Initializable {
     }
 
     public void ClickInscription(MouseEvent mouseEvent) {
+    }
+
+    public void ClickConnexion(MouseEvent mouseEvent) {
     }
 }
