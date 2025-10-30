@@ -52,9 +52,9 @@ public class HelloController implements Initializable {
 
     private void switchToConnexion() {
         paneProfils.setVisible(false);
-        paneProfils.setManaged(false);
+//        paneProfils.setManaged(false);
         paneConnexion.setVisible(true);
-        paneConnexion.setManaged(true);
+//        paneConnexion.setManaged(true);
     }
 
     public void ClickEntreppreneur(MouseEvent mouseEvent) {
@@ -67,5 +67,11 @@ public class HelloController implements Initializable {
     }
 
     public void btnConnecterP2(MouseEvent mouseEvent) {
+    }
+
+    public void btnCompteP1(MouseEvent mouseEvent) {
+    }
+
+    public void btnInscrireP3(MouseEvent mouseEvent) {
     }
 }
