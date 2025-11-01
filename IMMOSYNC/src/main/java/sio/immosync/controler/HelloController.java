@@ -60,18 +60,6 @@ public class HelloController implements Initializable {
     public void ClickEntreppreneur(MouseEvent mouseEvent) {
     }
 
-    public void btnSinscrire2(MouseEvent mouseEvent) {
-    }
-
-    public void btnInscriptionP1(MouseEvent mouseEvent) {
-    }
-
-    public void btnConnecterP2(MouseEvent mouseEvent) {
-    }
-
-    public void btnCompteP1(MouseEvent mouseEvent) {
-    }
-
-    public void btnInscrireP3(MouseEvent mouseEvent) {
+    public void ConnecterP1(MouseEvent mouseEvent) {
     }
 }

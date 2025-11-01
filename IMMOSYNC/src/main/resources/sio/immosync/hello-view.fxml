@@ -8,121 +8,142 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.immosync.controler.HelloController">
-   <children>
-      <AnchorPane fx:id="paneConnexion" focusTraversable="true" onMouseClicked="#btnInscriptionP1" prefHeight="622.0" prefWidth="960.0" visible="false">
-         <children>
-            <ImageView fitHeight="614.0" fitWidth="600.0" layoutX="62.0" layoutY="-160.0" pickOnBounds="true" preserveRatio="true" visible="false">
+<StackPane prefHeight="461.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.immosync.controler.HelloController">
+
+    <children>
+
+        <!-- ===========================
+             ÉCRAN CONNEXION
+        ============================ -->
+        <AnchorPane fx:id="paneConnexion" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <children>
+                <VBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                    <Label text="Veuillez vous connecter" textFill="#686868">
+                        <font>
+                            <Font name="System Bold" size="40.0" />
+                        </font>
+                    </Label>
+
+                    <TextField fx:id="txtLoginP2" promptText="Login" />
+                    <TextField fx:id="txtMdpP2" promptText="Mot de Passe" />
+                    <Button fx:id="btsConnecterP2" text="Se connecter ">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Button>
+                    <Label text="Mot de passe oublié ?" textFill="#5e5e5e">
+                        <font>
+                            <Font size="13.0" />
+                        </font>
+                    </Label>
+                </VBox>
+            </children>
+        </AnchorPane>
+
+        <!-- ===========================
+             ÉCRAN INSCRIPTION
+        ============================ -->
+        <AnchorPane fx:id="paneInscription" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <children>
+                <VBox alignment="CENTER" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                    <Label text="Veuillez vous inscrire" textFill="#686868">
+                        <font>
+                            <Font name="System Bold" size="40.0" />
+                        </font>
+                    </Label>
+
+                    <TextField fx:id="txtMailP3" promptText="Mail " />
+                    <TextField fx:id="txtMdpP3" promptText="Mot de Passe" />
+                    <TextField fx:id="txtConfirmationMdpP3" promptText="Confirmer votre mot de passe" />
+                    <Button fx:id="btnInscrireP3" text="S'inscrire">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Button>
+                </VBox>
+            </children>
+        </AnchorPane>
+
+        <!-- ===========================
+             ÉCRAN PROFILS
+        ============================ -->
+        <AnchorPane fx:id="paneProfils" prefHeight="462.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <children>
+            <ImageView fitHeight="432.0" fitWidth="680.0" layoutX="-2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/blannc.png" />
+                  <Image url="@../../../../../../IMMOSYNCproject/IMMOSYNC/src/main/resources/images/fond.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="283.0" layoutY="163.0" text="Veuillez vous connecter " textAlignment="CENTER" textFill="#686868">
-               <font>
-                  <Font name="System Bold" size="40.0" />
-               </font>
-            </Label>
-            <Label layoutX="418.0" layoutY="440.0" text="Mot de passe oublier ?" textAlignment="CENTER" textFill="#5e5e5e">
-               <font>
-                  <Font size="13.0" />
-               </font></Label>
-            <TextField fx:id="txtLoginP2" layoutX="362.0" layoutY="316.0" prefHeight="56.0" prefWidth="234.0" promptText="Login" />
-            <TextField fx:id="txtMdpP2" layoutX="362.0" layoutY="246.0" prefHeight="56.0" prefWidth="234.0" promptText="Mot de Passe" />
-            <ImageView fitHeight="59.0" fitWidth="163.0" layoutX="50.0" layoutY="26.0">
-               <image>
-                  <Image url="@../../../../../../../../daber/Downloads/Capture_d_écran_2025-10-28_232930-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="btsConnecterP2" layoutX="427.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#btnConnecterP2" text="Se connecter ">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="paneInscription" focusTraversable="true" layoutX="10.0" layoutY="10.0" onMouseClicked="#btnInscriptionP1" prefHeight="622.0" prefWidth="960.0" visible="false">
-         <children>
-            <ImageView fitHeight="614.0" fitWidth="600.0" layoutX="62.0" layoutY="-160.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@../../images/blannc.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="283.0" layoutY="163.0" text="Veuillez vous inscrire " textAlignment="CENTER" textFill="#686868">
-               <font>
-                  <Font name="System Bold" size="40.0" />
-               </font>
-            </Label>
-            <Label fx:id="lblmdpP3" layoutX="362.0" layoutY="385.0" prefHeight="19.0" prefWidth="234.0" text="label" textAlignment="CENTER" textFill="#5e5e5e">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txtMailP3" layoutX="362.0" layoutY="247.0" prefHeight="56.0" prefWidth="234.0" promptText="Mail " />
-            <TextField fx:id="txtMdpP3" layoutX="362.0" layoutY="316.0" prefHeight="56.0" prefWidth="234.0" promptText="Mot de Passe" />
-            <ImageView fitHeight="59.0" fitWidth="163.0" layoutX="50.0" layoutY="26.0">
-               <image>
-                  <Image url="@../../../../../../../../daber/Downloads/Capture_d_écran_2025-10-28_232930-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="btnInscrireP3" layoutX="428.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#btnInscrireP3" text="S'inscrire">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <TextField fx:id="txtConfirmationMdpP3" layoutX="362.0" layoutY="431.0" prefHeight="56.0" prefWidth="234.0" promptText="Confirmer votre mot de passe" />
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="paneProfils" focusTraversable="true" prefHeight="658.0" prefWidth="960.0">
-         <children>
-            <Text fill="#9c9999" layoutX="439.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profils" wrappingWidth="149.60000000000002">
-               <font>
-                  <Font name="System Bold" size="42.0" />
-               </font>
-            </Text>
-            <Text layoutX="397.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez sélectionner votre profils">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="341.0" fitWidth="951.0" layoutX="-5.0" layoutY="188.0">
-               <image>
-                  <Image url="@../../images/Capture_d_écran_2025-10-28_233331-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <HBox layoutX="37.0" layoutY="234.0" prefHeight="100.0" prefWidth="200.0">
-               <children>
-                  <ImageView fx:id="btnProprio" fitHeight="297.0" fitWidth="307.0" onMouseClicked="#ClickProprio" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/btnProprio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="btnEntrepreneur" fitHeight="300.0" fitWidth="308.0" onMouseClicked="#ClickEntreppreneur" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/btnEntrepreneur.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="btnInspecteur" fitHeight="300.0" fitWidth="307.0" onMouseClicked="#ClickInspecteur" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/btnInspecteur.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </HBox>
-            <Button fx:id="btsConnecterP1" layoutX="671.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#btnCompteP1" prefHeight="30.0" prefWidth="225.0" text="Vous avez deja un compte ? ">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <ImageView fitHeight="49.0" fitWidth="163.0" layoutX="37.0" layoutY="31.0">
-               <image>
-                  <Image url="@../../images/Capture_d_écran_2025-10-28_232930-removebg-preview.png" />
-               </image>
-            </ImageView>
+
+                <!-- Bouton Connexion -->
+                <Button fx:id="btsConnecterP1" layoutX="496.0" layoutY="34.0" onMouseClicked="#ConnecterP1" prefHeight="30.0" prefWidth="155.0" text="Vous avez déjà un compte ?" AnchorPane.rightAnchor="28.799999999999955" AnchorPane.topAnchor="34.0">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+
+                <!-- Zone centrale avec les profils -->
+                <VBox alignment="CENTER" layoutY="74.0" prefHeight="370.0" prefWidth="680.0" spacing="30" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+
+                    <Label text="Profils" textFill="#9c9999">
+                        <font>
+                            <Font name="System Bold" size="30.0" />
+                        </font>
+                    </Label>
+   
+                    <Label text="Veuillez sélectionner votre profil">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+
+                    <HBox alignment="CENTER" prefHeight="175.0" prefWidth="680.0" spacing="40">
+                        <ImageView fx:id="btnProprio" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#ClickProprio" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/btnProprio.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="btnEntrepreneur" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#ClickEntreppreneur" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/btnEntrepreneur.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="btnInspecteur" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#ClickInspecteur" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/btnInspecteur.png" />
+                            </image>
+                        </ImageView>
+                    </HBox>
+                </VBox>
+
+                <!-- Pied de page -->
+                <HBox alignment="CENTER" layoutY="437.0" spacing="50" AnchorPane.bottomAnchor="75.00000000000006" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../IMMOSYNCproject/IMMOSYNC/src/main/resources/images/groupe.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Qui sommes-nous ?" />
+                        <ImageView fitHeight="30.0" fitWidth="22.0" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../IMMOSYNCproject/IMMOSYNC/src/main/resources/images/casque.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Appeler le support" />
+                    </children>
+                </HBox>
 
             </children>
-      </AnchorPane>
-   </children>
+        </AnchorPane>
+
+    </children>
 </StackPane>
