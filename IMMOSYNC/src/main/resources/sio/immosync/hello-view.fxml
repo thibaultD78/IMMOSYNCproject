@@ -79,7 +79,7 @@
             <children>
             <ImageView fitHeight="432.0" fitWidth="680.0" layoutX="-2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../IMMOSYNCproject/IMMOSYNC/src/main/resources/images/fond.jpg" />
+                  <Image url="@../../images/fond.png" />
                </image>
             </ImageView>
 
@@ -129,13 +129,13 @@
                     <children>
                         <ImageView fitHeight="33.0" fitWidth="31.0" preserveRatio="true">
                             <image>
-                                <Image url="@../../../../../../IMMOSYNCproject/IMMOSYNC/src/main/resources/images/groupe.png" />
+                                <Image url="@../../images/groupe.png" />
                             </image>
                         </ImageView>
                         <Label text="Qui sommes-nous ?" />
                         <ImageView fitHeight="30.0" fitWidth="22.0" preserveRatio="true">
                             <image>
-                                <Image url="@../../../../../../IMMOSYNCproject/IMMOSYNC/src/main/resources/images/casque.png" />
+                                <Image url="@../../images/casque.png" />
                             </image>
                         </ImageView>
                         <Label text="Appeler le support" />
